@@ -1,5 +1,5 @@
 const Page = ({}) => {
-  return <div>twsttt</div>
+  return <div></div>
 }
 
 export default Page

@@ -2,8 +2,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavbarA from "@/components/NavbarA";
 import NavbarB from "@/components/NavbarB";
-
 const inter = Inter({ subsets: ["latin"] });
+import bg from "../../public/images/background.png"
+import Image from "next/image";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-[url('../../public/images/background.png')] bg-no-repeat bg-cover bg-center bg-fixed`}>
         <NavbarA/>
         <NavbarB/>
         {children}
