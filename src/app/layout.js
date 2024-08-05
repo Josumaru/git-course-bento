@@ -14,10 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[url('../../public/images/background.png')] bg-no-repeat bg-cover bg-center bg-fixed`}>
-        <NavbarA/>
+      <body className={`${inter.className} h-screen bg-zinc-600`}>
+        {/* <NavbarA/> */}
         <NavbarB/>
-        {children}
+        {/* {children} */}
       </body>
     </html>
   );
